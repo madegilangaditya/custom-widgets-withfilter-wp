@@ -1,0 +1,228 @@
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  	box-sizing: border-box;
+	font-weight: 400;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+.udb-inline-block {
+	display: inline-block !important;
+	vertical-align: middle;
+}
+/*
+ *	Header
+*/
+
+.udb-banner h1 {
+	text-transform: capitalize !important;
+}
+
+/* Top Nav */
+.udb-icon-topnav {
+	margin-right: 10px !important;
+}
+
+/* Navigation */
+.udb-navigation-header .et-menu li,
+.udb-navigation-header .et-menu li > a{
+	padding: 0 !important;
+}
+.udb-navigation-header .et-menu li{
+	margin: 0 0 0 59px !important;
+}
+.udb-navigation-header .et_pb_menu__wrap .mobile_nav .mobile_menu_bar:before {
+	color: #693393 !important;
+}
+
+/* Search */
+.udb-header-search-icon {
+	cursor: pointer;
+}
+
+.udb-row-content-center {
+	text-align: center;
+}
+
+/* Banner content */
+.udb-banner-content {
+	text-transform: capitalize;
+}
+.udb-banner-content ul {
+	padding-bottom: 0 !important;
+	margin-top: 17px;
+	list-style: none;
+}
+.udb-banner-content ul > li {
+	position: relative
+}
+.udb-banner-content ul > li > span {
+	margin: 0 0 10px 22px;
+	display: block;
+}
+.udb-banner-content ul > li:before {
+	content: '';
+	background-image: url('/wp-content/uploads/2021/06/check-bullet-ico.svg');
+    width: 20px;
+    height: 14.91px;
+    position: absolute;
+    left: -22px;
+    top: 6px;
+}
+
+@media only screen and (min-width: 981px) {
+	/* Row */
+	.udb-section-header > .et_pb_row,
+	.udb-section-topnav > .et_pb_row {
+		align-items: center !important;
+		display: flex !important;
+	}	
+	
+	.udb-section-header > .et_pb_row > .et_pb_column.et-last-child {
+		text-align: right !important;
+	}
+	
+	/* Navigation */
+	.udb-navigation-topnav .et_pb_menu__wrap {
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 981px) {
+	
+	.udb-section-header {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+	.udb-section-header > .et_pb_row > .et_pb_column,
+	.udb-section-topnav > .et_pb_row > .et_pb_column {
+		margin: 0 !important
+	}
+	
+	.udb-search {
+		display: block !important;
+	}
+	
+	.udb-navigation-header .et_mobile_nav_menu .et_mobile_menu{
+		width: 340px;
+		transform: translateX(-300px);
+	}
+
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1024px) {
+	.udb-section-header {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+}
+
+/*
+ * Footer 
+*/
+
+/* Navigation */
+.udb-navigation-footer {
+	padding: 0 !important;
+	border: 0 !important;
+}
+.udb-navigation-footer > .et_pb_widget {
+	margin: 0 !important;
+	margin-bottom: 10px !important;
+}
+.udb-navigation-footer > .et_pb_widget .menu > li {
+	margin-bottom: 10px !important;
+}
+/* Column Sizing */
+.udb-row-footer > .et_pb_column {
+	margin: 0 !important;
+}
+@media only screen and (min-width: 981px) {
+	
+	.udb-row-footer > .et_pb_column:nth-child(1) {
+		width: 31% !important;
+	}
+
+	.udb-row-footer > .et_pb_column:not(:nth-child(1)) {
+		width: 20.2% !important;
+		margin-left: 30px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.udb-row-footer > .et_pb_column {
+		width: 100% !important;
+	}
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

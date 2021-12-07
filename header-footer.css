@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p, ul, ol, span,
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0
+}
+
+/**
+ * Header Section
+*/
+.avb-header-nav-mobile .elementor-nav-menu--dropdown{
+	position: absolute;
+    z-index: 999;
+	width: 100%;
+	border-top: 1px solid #8C43C6;
+    padding: 10px 0;
+}
+.avb-search-toggle {
+	cursor: pointer;
+}
+
+header.page-header{
+	display: none
+}
+
+@media only screen and (max-width: 767px) {
+	.avb-header-nav-mobile {
+		margin-top: -45px;
+	}
+}
+/**
+ * Footer Section
+*/
+
+/* CTA */
+.avb-cta-btn .elementor-button {
+	width: 160px;
+}
+
+/* Footer */
+.avb-menu-footer .elementor-nav-menu > li {
+	margin: 0;
+}
